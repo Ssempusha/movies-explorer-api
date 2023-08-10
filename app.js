@@ -10,7 +10,7 @@ const errorHandler = require('./middlewares/errors');
 const NotFoundError = require('./errors/not-found-err');
 
 const app = express();
-mongoose.connect('mongodb://127.0.0.1:27017/bitfilmsdb', { family: 4 });
+mongoose.connect('mongodb://127.0.0.1:27017/mestobd', { family: 4 });
 const { createUser, login, signout } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const usersRouter = require('./routes/users');
