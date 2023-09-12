@@ -11,7 +11,7 @@ router.get('/', getSaveMovies); // возвращает все сохранён�
 router.post('/', createMovie); // создаёт фильм с переданными в теле country, director, duration, year, description, image, trailer, nameRU, nameEN и thumbnail, movieId
 router.delete('/:movieId', celebrate({
   params: Joi.object().keys({
-    movieId: Joi.string().length(24).hex(),
+    movieId: Joi.string().required().length(24).hex(),
   }),
 }), deleteMovie); // удаляет сохранённый фильм по id
 
