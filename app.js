@@ -18,7 +18,7 @@ const moviesRouter = require('./routes/movies');
 const { limiter } = require('./utils/limiter');
 
 app.use(cors({
-  origin: ['http://localhost:3001', 'http://moviessempusha.nomoreparties.co', 'https://moviessempusha.nomoreparties.co'],
+  origin: ['http://localhost:3001', 'http://moviessempusha.nomoreparties.co', 'https://moviessempusha.nomoreparties.co', 'https://api.nomoreparties.co/beatfilm-movies'],
   methods: ['GET', 'PUT', 'POST', 'PATCH', 'DELETE'],
   credentials: true,
   optionsSuccessStatus: 200,
